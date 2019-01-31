@@ -2,6 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QWidget>
+#include<QFileDialog>
+#include<QFile>
+#include<QMessageBox>
+#include<QIODevice>
+#include<QTextStream>
+
 
 namespace Ui {
 class mainWindow;
@@ -20,6 +26,7 @@ private slots:
 
 private:
     Ui::mainWindow *ui;
+    void displayTruncatedText(QFile &file);
 };
 
 #endif // MAINWINDOW_H
